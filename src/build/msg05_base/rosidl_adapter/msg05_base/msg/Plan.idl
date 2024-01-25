@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from msg05_base/msg/Plan.msg
+// generated code does not contain a copyright notice
+
+#include "msg05_base/msg/Group.idl"
+#include "msg05_base/msg/PointI16.idl"
+#include "msg05_base/msg/Rect.idl"
+#include "msg05_base/msg/Target.idl"
+
+module msg05_base {
+  module msg {
+    struct Plan {
+      sequence<msg05_base::msg::Group> groups;
+
+      uint8 mission;
+
+      uint8 task;
+
+      msg05_base::msg::Rect mission_area;
+
+      msg05_base::msg::Rect mission_sub_area;
+
+      sequence<msg05_base::msg::Target> targets;
+
+      sequence<msg05_base::msg::PointI16> formation;
+    };
+  };
+};

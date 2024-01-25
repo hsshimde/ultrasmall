@@ -1,0 +1,1 @@
+PlatformRegistration registration

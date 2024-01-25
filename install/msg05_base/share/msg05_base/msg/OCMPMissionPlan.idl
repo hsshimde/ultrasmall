@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from msg05_base/msg/OcMpMissionPlan.msg
+// generated code does not contain a copyright notice
+
+#include "msg05_base/msg/Rect.idl"
+
+module msg05_base {
+  module msg {
+    struct OCMPMissionPlan {
+      string mission_name;
+
+      msg05_base::msg::Rect mission_area;
+    };
+  };
+};

@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from msg05_base/msg/MissionResult.msg
+// generated code does not contain a copyright notice
+
+#include "msg05_base/msg/Error.idl"
+
+module msg05_base {
+  module msg {
+    struct MissionResult {
+      uint8 id;
+
+      uint8 mission_status;
+
+      msg05_base::msg::Error error;
+    };
+  };
+};

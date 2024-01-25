@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from msg05_base/msg/Vector3F32.msg
+// generated code does not contain a copyright notice
+
+
+module msg05_base {
+  module msg {
+    struct Vector3F32 {
+      float x;
+
+      float y;
+
+      float z;
+    };
+  };
+};

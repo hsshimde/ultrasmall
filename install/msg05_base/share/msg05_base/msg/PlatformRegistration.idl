@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from msg05_base/msg/PlatformRegistration.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/String.idl"
+
+module msg05_base {
+  module msg {
+    struct PlatformRegistration {
+      uint8 id;
+
+      std_msgs::msg::String ip;
+
+      uint8 platform_type;
+    };
+  };
+};

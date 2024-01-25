@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from msg05_base/msg/SensorInfo.msg
+// generated code does not contain a copyright notice
+
+#include "msg05_base/msg/BoundingBoxPoses.idl"
+#include "msg05_base/msg/DrivingPose.idl"
+#include "msg05_base/msg/PlatformState.idl"
+
+module msg05_base {
+  module msg {
+    struct SensorInfo {
+      uint8 id;
+
+      msg05_base::msg::PlatformState state;
+
+      msg05_base::msg::BoundingBoxPoses bbox;
+
+      msg05_base::msg::DrivingPose driving;
+    };
+  };
+};

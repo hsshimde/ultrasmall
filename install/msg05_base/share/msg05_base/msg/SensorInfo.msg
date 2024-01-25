@@ -1,0 +1,4 @@
+uint8 id
+PlatformState state
+BoundingBoxPoses bbox
+DrivingPose driving

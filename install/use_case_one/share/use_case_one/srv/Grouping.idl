@@ -1,0 +1,27 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from use_case_one/srv/Grouping.srv
+// generated code does not contain a copyright notice
+
+
+module use_case_one {
+  module srv {
+    struct Grouping_Request {
+      int32 platform_id;
+
+      boolean is_leader;
+
+      octet request_type;
+
+      int32 group_idx;
+    };
+    struct Grouping_Response {
+      int32 platform_id;
+
+      boolean is_leader;
+
+      octet reply_type;
+
+      int32 group_idx;
+    };
+  };
+};

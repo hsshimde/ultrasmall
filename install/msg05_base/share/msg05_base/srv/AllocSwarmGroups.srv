@@ -1,0 +1,3 @@
+SwarmGroups[] swarmgroups
+---
+std_msgs/Bool result

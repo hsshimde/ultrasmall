@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from msg05_base/msg/Target.msg
+// generated code does not contain a copyright notice
+
+#include "msg05_base/msg/Vector3F32.idl"
+
+module msg05_base {
+  module msg {
+    struct Target {
+      uint8 action;
+
+      msg05_base::msg::Vector3F32 position;
+
+      int16 theta;
+    };
+  };
+};

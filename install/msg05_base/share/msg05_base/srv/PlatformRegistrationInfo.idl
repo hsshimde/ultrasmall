@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from msg05_base/srv/PlatformRegistrationInfo.srv
+// generated code does not contain a copyright notice
+
+#include "msg05_base/msg/PlatformRegistration.idl"
+#include "std_msgs/msg/Bool.idl"
+
+module msg05_base {
+  module srv {
+    struct PlatformRegistrationInfo_Request {
+      msg05_base::msg::PlatformRegistration registration;
+    };
+    struct PlatformRegistrationInfo_Response {
+      std_msgs::msg::Bool result;
+    };
+  };
+};

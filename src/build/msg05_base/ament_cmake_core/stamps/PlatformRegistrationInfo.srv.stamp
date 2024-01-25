@@ -1,0 +1,3 @@
+PlatformRegistration registration
+---
+std_msgs/Bool result

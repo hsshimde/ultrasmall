@@ -1,0 +1,2 @@
+string mission_name
+Rect mission_area
