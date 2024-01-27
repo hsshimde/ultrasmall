@@ -8,8 +8,10 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
+find_package(rosidl_typesupport_c REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(nav_msgs REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
@@ -22,21 +24,25 @@ set(msg_files
         "msg/Details.msg"
         "msg/MissionResult.msg"
         "msg/MissionResults.msg"
+        "msg/MissionResultsSequence.msg"
         "msg/PointI16.msg"
         "msg/Rect.msg"
         "msg/PlatformRegistration.msg"
         "msg/Group.msg"
+        "msg/Groups.msg"
         "msg/PlatformState.msg"
         "msg/SiteInfo.msg"
         "msg/Target.msg"
         "msg/Plan.msg"
         "msg/GroupStatusCmd.msg"
         "msg/DrivingPose.msg"
+        "msg/SendingImagePI.msg"
         "msg/DrivingTarget.msg"
-        "msg/BoundingBoxPos.msg"
+        "msg/BoundingBoxPose.msg"
         "msg/BoundingBoxPoses.msg"
         "msg/Image.msg"
         "msg/SensorInfo.msg"
+        "msg/SensorInfoSequence.msg"
         "msg/OrderTopic.msg"
         "msg/OcMpMissionPlan.msg"
         "msg/SwarmGroups.msg"
@@ -54,13 +60,13 @@ set(srv_files
 rosidl_generate_interfaces(${PROJECT_NAME}
         ${msg_files}
         ${srv_files}
-        DEPENDENCIES std_msgs
+        DEPENDENCIES std_msgs nav_msgs
 )
 
-add_executable(platform_registration_info_server src/PlatformRegistrationInfo_server.cpp)
-add_executable(platform_registration_info_client src/PlatformRegistrationInfo_client.cpp)
-ament_target_dependencies(platform_registration_info_server rclcpp )
-ament_target_dependencies(platform_registration_info_client rclcpp )
+#add_executable(platform_registration_info_server src/PlatformRegistrationInfo_server.cpp)
+#add_executable(platform_registration_info_client src/PlatformRegistrationInfo_client.cpp)
+#ament_target_dependencies(platform_registration_info_server rclcpp )
+#ament_target_dependencies(platform_registration_info_client rclcpp )
 
 ament_export_dependencies(rosidl_default_runtime)
 
